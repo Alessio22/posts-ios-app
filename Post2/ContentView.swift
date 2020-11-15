@@ -8,9 +8,31 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var user = User()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView {
+            PostsListView()
+                .tabItem {
+                    Image(systemName: "house")
+                    Text("Posts")
+                }
+        
+            if !user.isLoggedIn {
+                LoginView(user: user)
+                    .tabItem {
+                        Image(systemName: "key")
+                        Text("Login")
+                    }
+            } else {
+                ProfileView(user: user)
+                    .tabItem {
+                        Image(systemName: "person")
+                        Text("Profilo")
+                    }
+            }
+        }
+        .accentColor(.red)
     }
 }
 

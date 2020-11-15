@@ -13,6 +13,14 @@
 		22278837255E72C200B71E37 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22278836255E72C200B71E37 /* Preview Assets.xcassets */; };
 		22278842255E72C200B71E37 /* Post2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22278841255E72C200B71E37 /* Post2Tests.swift */; };
 		2227884D255E72C200B71E37 /* Post2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2227884C255E72C200B71E37 /* Post2UITests.swift */; };
+		22278866255E741700B71E37 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22278865255E741700B71E37 /* PostDetailView.swift */; };
+		2227886C255E780500B71E37 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2227886B255E780500B71E37 /* Post.swift */; };
+		22278877255E795700B71E37 /* PostRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22278876255E795700B71E37 /* PostRowView.swift */; };
+		2242688A25617B3300BDEC69 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2242688925617B3300BDEC69 /* LoginView.swift */; };
+		22426890256185B000BDEC69 /* PostsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2242688F256185B000BDEC69 /* PostsListView.swift */; };
+		2242689825618D3B00BDEC69 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2242689725618D3B00BDEC69 /* User.swift */; };
+		2242689D2561930500BDEC69 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2242689C2561930500BDEC69 /* ProfileView.swift */; };
+		22660610255EBBF400CAB329 /* NewPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2266060F255EBBF400CAB329 /* NewPostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +53,14 @@
 		22278848255E72C200B71E37 /* Post2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Post2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2227884C255E72C200B71E37 /* Post2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post2UITests.swift; sourceTree = "<group>"; };
 		2227884E255E72C200B71E37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22278865255E741700B71E37 /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
+		2227886B255E780500B71E37 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		22278876255E795700B71E37 /* PostRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRowView.swift; sourceTree = "<group>"; };
+		2242688925617B3300BDEC69 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		2242688F256185B000BDEC69 /* PostsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsListView.swift; sourceTree = "<group>"; };
+		2242689725618D3B00BDEC69 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2242689C2561930500BDEC69 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		2266060F255EBBF400CAB329 /* NewPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +111,18 @@
 		2227882E255E72C100B71E37 /* Post2 */ = {
 			isa = PBXGroup;
 			children = (
+				2242688925617B3300BDEC69 /* LoginView.swift */,
+				2227886A255E779400B71E37 /* models */,
 				2227882F255E72C100B71E37 /* Post2App.swift */,
 				22278831255E72C100B71E37 /* ContentView.swift */,
 				22278833255E72C200B71E37 /* Assets.xcassets */,
 				22278838255E72C200B71E37 /* Info.plist */,
 				22278835255E72C200B71E37 /* Preview Content */,
+				22278865255E741700B71E37 /* PostDetailView.swift */,
+				22278876255E795700B71E37 /* PostRowView.swift */,
+				2266060F255EBBF400CAB329 /* NewPostView.swift */,
+				2242688F256185B000BDEC69 /* PostsListView.swift */,
+				2242689C2561930500BDEC69 /* ProfileView.swift */,
 			);
 			path = Post2;
 			sourceTree = "<group>";
@@ -128,6 +151,15 @@
 				2227884E255E72C200B71E37 /* Info.plist */,
 			);
 			path = Post2UITests;
+			sourceTree = "<group>";
+		};
+		2227886A255E779400B71E37 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				2227886B255E780500B71E37 /* Post.swift */,
+				2242689725618D3B00BDEC69 /* User.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +291,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22278877255E795700B71E37 /* PostRowView.swift in Sources */,
+				2242688A25617B3300BDEC69 /* LoginView.swift in Sources */,
+				2242689D2561930500BDEC69 /* ProfileView.swift in Sources */,
+				22278866255E741700B71E37 /* PostDetailView.swift in Sources */,
 				22278832255E72C100B71E37 /* ContentView.swift in Sources */,
+				22660610255EBBF400CAB329 /* NewPostView.swift in Sources */,
+				2242689825618D3B00BDEC69 /* User.swift in Sources */,
 				22278830255E72C100B71E37 /* Post2App.swift in Sources */,
+				22426890256185B000BDEC69 /* PostsListView.swift in Sources */,
+				2227886C255E780500B71E37 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
